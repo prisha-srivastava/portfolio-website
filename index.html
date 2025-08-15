@@ -3,33 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prisha's Portfolio</title>
+    <title>Prisha Srivastava - Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-light">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light pastel-navbar shadow-sm">
+  <body>
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+      "
+    >
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Prisha Srivastava</a>
+        <a
+          class="navbar-brand fw-bold"
+          href="#home"
+          style="color: var(--text-dark)"
+          >Prisha Srivastava</a
+        >
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
+          data-bs-target="#navbarNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#highlights">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications">Publications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -39,87 +76,442 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="text-center py-5 pastel-hero">
-      <div class="container">
-        <h1 class="display-5 fw-bold">Hi, I'm Prisha 👋</h1>
-        <p class="lead">Data Analyst | Problem Solver | Lifelong Learner</p>
+    <!-- Hero/Intro Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <img
+              src="profile-image.jpg"
+              alt="Prisha Srivastava"
+              class="profile-image"
+            />
+          </div>
+          <div class="col-lg-8">
+            <h1 class="hero-title">Welcome to My Professional Portfolio! ✨</h1>
+            <p class="hero-subtitle">
+              Hi there! I'm <strong>Prisha Srivastava</strong>, a data explorer
+              and solution-finder fascinated by the power of data to shape
+              smarter decisions and impactful stories.
+            </p>
+
+            <p class="mb-4">
+              Currently pursuing my
+              <strong
+                >Master's in Business Analytics at the University of
+                Cincinnati</strong
+              >, I'm dedicated to turning insights into results, one dataset at
+              a time.
+            </p>
+
+            <div class="contact-links mb-4">
+              <a href="mailto:prishas.2501@gmail.com"
+                ><i class="fas fa-envelope"></i> Personal Email</a
+              >
+              <a href="mailto:srivasp2@mail.uc.edu"
+                ><i class="fas fa-university"></i> University Email</a
+              >
+              <a
+                href="https://www.linkedin.com/in/prisha-srivastava"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i> LinkedIn Profile</a
+              >
+            </div>
+
+            <p class="text-muted">
+              With a foundation in Electronics & Communications Engineering, I
+              bring both technical depth and analytical rigor to my work and am
+              eager to connect with others who share my enthusiasm for
+              data-driven progress.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Professional Highlights Section -->
+    <section id="highlights" class="highlights-section">
       <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <p class="text-center mx-auto" style="max-width: 600px">
-          I’m passionate about uncovering insights from data and turning them
-          into actionable strategies. Skilled in SQL, Python, Power BI, and
-          building data pipelines.
-        </p>
-      </div>
-    </section>
+        <div class="section-header">
+          <h2 class="section-title">Professional Highlights 💡</h2>
+        </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 pastel-section">
-      <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card pastel-card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Metal Detector Recommendation System</h5>
-                <p class="card-text">
-                  Optimized processing of 47M+ records with Python & Databricks,
-                  boosting efficiency by 10%.
-                </p>
-              </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="highlight-card">
+              <h4 class="highlight-title">Data Analyst Intern</h4>
+              <p class="highlight-company">DHL Express (May '25 - Present)</p>
+              <p>
+                I'm currently interning at DHL Express, where I dive into
+                transforming complex data into clear, actionable insights for
+                the clearance operations team. From designing SQL Server
+                solutions to crafting Power BI dashboards, I help mid- and
+                senior-level managers track key performance trends week by week
+                and year by year. I also build Python tools to automate
+                important metrics, making reporting faster and more reliable.
+              </p>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card pastel-card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Shipment & Agent Data Analysis</h5>
-                <p class="card-text">
-                  Built ETL pipelines and Power BI dashboards for U.S. gateways,
-                  improving operational insights.
-                </p>
-              </div>
+
+            <div class="highlight-card">
+              <h4 class="highlight-title">Data Analyst</h4>
+              <p class="highlight-company">
+                University of Cincinnati – Centre for Business Analytics (Sep
+                '24 - May '25)
+              </p>
+              <p>
+                At the University of Cincinnati's Centre for Business Analytics,
+                I analyzed customer data for a steel manufacturer and led
+                diagnostics for a metal detector recommendation system. I also
+                developed ETL pipelines with Python and Databricks to improve
+                system efficiency. This role enhanced my skills in data
+                analysis, visualization, and the power of clean data in driving
+                business decisions.
+              </p>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card pastel-card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Clearance Efficiency Dashboard</h5>
-                <p class="card-text">
-                  Automated KPI tracking using Python, enabling faster
-                  decision-making.
-                </p>
-              </div>
+
+            <div class="highlight-card">
+              <h4 class="highlight-title">Analyst</h4>
+              <p class="highlight-company">
+                Neo Initiative (Aug '24 - Dec '24)
+              </p>
+              <p>
+                At the Neo Initiative, I collaborated with minority-owned small
+                businesses in the Greater Cincinnati area to provide data-driven
+                insights that supported their growth. I analyzed sales data to
+                identify key trends and developed predictive models that
+                informed business decisions. My work was focused on empowering
+                business owners with actionable insights, driving sustainable
+                growth, and promoting economic equity within underserved
+                communities.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <h4 class="highlight-title">Risk Analyst</h4>
+              <p class="highlight-company">CyberBoxer.AI (2024)</p>
+              <p>
+                At CyberBoxer.AI, I analyzed complex insurance risks,
+                transforming data into actionable premium and policy
+                recommendations. My skills in location analysis and CAT modeling
+                delivered comprehensive risk assessments, while my data-cleaning
+                initiatives led to smoother underwriting processes and clearer
+                insights.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <h4 class="highlight-title">Assistant Systems Engineer</h4>
+              <p class="highlight-company">
+                Tata Consultancy Services (2022 - 2023)
+              </p>
+              <p>
+                Partnered with clients in the BFSI domain to manage incident
+                resolutions and large-scale data needs. My contributions
+                included customized client reports, data accuracy improvements,
+                and maintaining a 95% customer satisfaction rating with a 20%
+                boost in operational efficiency.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section">
       <div class="container">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <p class="text-center">📧 Email: your.email@example.com</p>
-        <p class="text-center">
-          💼
-          <a href="https://www.linkedin.com/in/prishasrivastava" target="_blank"
-            >LinkedIn</a
-          >
-        </p>
+        <div class="section-header">
+          <h2 class="section-title">Publications 📑</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="publication-card">
+              <h4 class="publication-title">
+                Generative AI and Large Scale Generative Based Conversational
+                Systems (Chatbot Frameworks)
+              </h4>
+              <p class="publication-journal">
+                International Journal of All Research Education & Scientific
+                Methods, ISSN: 2455-6211, Volume 11, Issue 10, October 2023
+              </p>
+              <p>
+                This publication explores the capabilities and applications of
+                generative AI in developing large-scale conversational systems,
+                providing insights into chatbot frameworks and their potential.
+              </p>
+              <a
+                href="https://www.ijaresm.com/generative-ai-and-large-scale-generative-based-conversational-systems-chatbot-frameworks"
+                target="_blank"
+                class="btn btn-pastel"
+              >
+                <i class="fas fa-external-link-alt"></i> Read Publication
+              </a>
+            </div>
+
+            <div class="publication-card">
+              <h4 class="publication-title">
+                Smart Healthcare Systems Using Big Data Analytics:
+                Opportunities, Challenges, and Future Directions
+              </h4>
+              <p class="publication-journal">
+                TIJER - International Research Journal, ISSN:2349-9249, Vol.10,
+                Issue 10, page no.a27-a31, October 2023
+              </p>
+              <p>
+                In this paper, I examine the transformative role of big data
+                analytics in healthcare, discussing opportunities, challenges,
+                and future directions for smart healthcare systems.
+              </p>
+              <a
+                href="https://tijer.org/tijer/papers/TIJER2310004.pdf"
+                target="_blank"
+                class="btn btn-pastel"
+              >
+                <i class="fas fa-external-link-alt"></i> Read Publication
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="text-center py-3 pastel-footer">
-      <p class="mb-0">&copy; 2025 Prisha Srivastava. All Rights Reserved.</p>
-    </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Projects that I have worked on 💡</h2>
+        </div>
 
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-icon">📊</div>
+              <h4 class="project-title">
+                Consumer & Marketing Analysis of F&B Firm
+              </h4>
+              <p>
+                I conducted an in-depth analysis of a 10,000-respondent survey
+                from 10 cities to reveal crucial consumer insights. These
+                insights drove the German beverage market strategy in India,
+                resulting in a 20% increase in brand awareness and a 15% boost
+                in market share within six months of product launch.
+              </p>
+              <a
+                href="https://public.tableau.com/app/profile/ps7906/viz/CodeX_Analysis/CodeXEnergyDrinkAnalysis"
+                target="_blank"
+                class="btn btn-pastel"
+              >
+                <i class="fas fa-chart-line"></i> View Dashboard
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-icon">📉</div>
+              <h4 class="project-title">
+                Employee Attrition Prediction through Regression Analysis
+              </h4>
+              <p>
+                Utilizing Python, I cleaned, wrangled, and performed exploratory
+                data analysis to prepare a robust employee dataset. I developed
+                regression models, achieving 90% accuracy in predicting employee
+                attrition, which helped in devising proactive retention
+                strategies.
+              </p>
+              <a
+                href="https://colab.research.google.com/drive/1z8Nux9lEh8IChlROq_2Oo2lIT6GJ9Y3t#scrollTo=jf1TG9QodZAG"
+                target="_blank"
+                class="btn btn-pastel"
+              >
+                <i class="fab fa-python"></i> View Code
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-icon">📈</div>
+              <h4 class="project-title">Startup Expansion Forecasting</h4>
+              <p>
+                I developed a comprehensive dashboard for a startup in the
+                garment cleaning services sector, improving decision-making and
+                strategic planning capabilities. My analysis led to an 11.5%
+                revenue increase in smaller cities and informed strategies for
+                network expansion.
+              </p>
+              <a
+                href="https://public.tableau.com/app/profile/ps7906/viz/StartupExpansion_16799468815810/Startupexpansionanalysisdashboard"
+                target="_blank"
+                class="btn btn-pastel"
+              >
+                <i class="fas fa-chart-line"></i> View Dashboard
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-icon">📊</div>
+              <h4 class="project-title">
+                Consulting Firm Market Sizing Analysis
+              </h4>
+              <p>
+                I supported a consulting firm's market sizing case for a new
+                pharmaceutical product launch. By analyzing market data, I
+                determined potential market size and growth. I also designed an
+                interactive Tableau dashboard that facilitated data exploration
+                and informed decision-making.
+              </p>
+              <a
+                href="https://public.tableau.com/app/profile/ps7906/viz/PharmaMarketSizingDashboard/Dashboard1"
+                target="_blank"
+                class="btn btn-pastel"
+              >
+                <i class="fas fa-chart-line"></i> View Dashboard
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills 💻</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Functional</h4>
+              <span class="skill-item">Requirement Gathering</span>
+              <span class="skill-item">Project Management</span>
+              <span class="skill-item">Incident Management</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Programming Languages</h4>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">R</span>
+              <span class="skill-item">SQL</span>
+              <span class="skill-item">C++</span>
+              <span class="skill-item">Java</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Data Science</h4>
+              <span class="skill-item">Machine Learning</span>
+              <span class="skill-item">Data Mining</span>
+              <span class="skill-item">Hypothesis Testing</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Data Visualization Tools</h4>
+              <span class="skill-item">Tableau</span>
+              <span class="skill-item">Microsoft Excel</span>
+              <span class="skill-item">PowerBI</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Risk Management</h4>
+              <span class="skill-item">Underwriting</span>
+              <span class="skill-item">CAT Modelling</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Certifications</h4>
+              <span class="skill-item"
+                >Google Advanced Data Analytics Professional Certificate</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Hobbies and Interests 🎨</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="hobby-card">
+              <div class="hobby-icon">🎨</div>
+              <h4>Creative Arts</h4>
+              <p>
+                Creativity has always been my passion, especially through
+                painting. From sketching and watercolor to acrylic, oil,
+                texture, and glass painting, I've explored it all!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="hobby-card">
+              <div class="hobby-icon">🌿</div>
+              <h4>Gardening</h4>
+              <p>
+                Lately, I'm also diving into gardening and building a collection
+                of indoor house plants. I love the fresh, calming vibe they
+                bring into my space.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer/Contact Section -->
+    <section id="contact" class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="footer-text">
+              Thank you for visiting my portfolio. I'm eager to bring my
+              expertise and passion for data-driven solutions to new and
+              exciting challenges. Let's connect and explore how we can achieve
+              great things together! 🤝
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:prishas.2501@gmail.com"
+                ><i class="fas fa-envelope"></i> prishas.2501@gmail.com</a
+              >
+              <a href="mailto:srivasp2@mail.uc.edu"
+                ><i class="fas fa-envelope"></i> srivasp2@mail.uc.edu</a
+              >
+              <a
+                href="https://www.linkedin.com/in/prisha-srivastava"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i> LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="script.js"></script>
   </body>
 </html>
