@@ -27,6 +27,10 @@ body {
   color: var(--text-dark);
 }
 
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+}
 /* Header/Intro Section */
 .hero-section {
   background: var(--gradient-primary);
